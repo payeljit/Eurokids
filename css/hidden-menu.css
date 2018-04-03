@@ -1,0 +1,74 @@
+
+        #hidden-menu {
+            display:none;
+            
+            float: right;
+            height: 700px;
+            /*display: table;*/
+            overflow: scroll;
+            position: fixed;
+            top:-15px;
+            right: 0;
+            z-index: 999;
+        }
+/* to show the hidden menu on top of everything */
+@media (max-width:400px){
+    #hidden-menu{
+        z-index: 999;
+    } 
+}
+        
+       #hidden-menu ul li{
+           list-style-type: none;
+            padding: 2%;
+            margin-bottom: 1px;
+            background-color: #fff;
+            height: 30px;
+            color: #6734ff;
+        }
+        
+       #hidden-menu ul li a{
+         text-decoration: none;
+         
+        }
+        
+        #hidden-menu ul{
+            width: 230px;
+            
+            
+        }
+        
+        #hidden-menu #menu-home-pic{
+            float: right;
+        }
+       #hidden-menu #cross-home-pic{
+            background-color: #fbe600;
+            padding: 20px 20px 30px 20px;
+            margin-bottom: 0;
+        }
+       #hidden-menu .blue{
+            background-color:#6734ff;
+            
+            font-size: 120%;
+          
+            background-image: url(../menuimg/drop-arrow.png);
+            background-repeat: no-repeat;
+            background-position: 160px 10px;
+           
+        }
+        #hidden-menu .blue a{
+          color: #fff;  
+          padding-left: 4px; 
+          padding-top: 4px;
+          font-size: 110%;
+          
+          
+        }
+        #hidden-menu .blue:hover{
+         background-color:#fff;   
+        }
+        #hidden-menu .blue a:hover{
+        
+        color:#6734ff;
+       
+        }

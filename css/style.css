@@ -1,0 +1,515 @@
+*{box-sizing: border-box;}/*This makes sure that the padding and border are included in the total width and height of the elements.*/
+a{
+    text-decoration: none;
+}
+p{
+    padding-left: 2%;
+}
+img{
+    
+    max-width: 100%;
+}
+#extra-curi li, #slider li, footer li{
+    display: inline;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Laila', serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 20px;
+    overflow-x: hidden;
+    
+}
+
+
+/* SLIDER */
+/*.bx-wrapper .bxslider{
+    width: 100%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    height: 1052px;
+}*/
+/*====================================  Header ================================ */
+
+
+.container_header{
+    width: 100%;
+    height: 80em;
+    /*background-image: url(../slide5.jpg);*/
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size:100% auto;
+  
+}
+
+/* .container_header in different screen size margin bottom issue */
+@media (max-width:480px){
+    .container_header{
+        margin-bottom: -700px;
+    }  
+}
+ @media (min-width:482px)and (max-width:650px){
+    .container_header{
+        margin-bottom: -550px;
+    }  
+} 
+
+@media (min-width:652px)and (max-width:776px){
+    .container_header{
+        margin-bottom: -450px;
+    }  
+}  
+    
+ @media (min-width:777px)and (max-width:950px){
+    .container_header{
+        margin-bottom: -320px;
+    }  
+} 
+ /*bigger screen */
+@media (min-width:1367px){
+    .container_header{
+        -webkit-background-size: cover;
+        background-size:cover ;
+    }  
+}    
+.logo{
+    width: 100%;
+    top:30px;
+    left: 15px;
+    position: absolute;
+    
+}
+.logo img{
+    
+    width: 150px;
+    
+}
+
+nav {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top:10px;
+    right: 0;
+    
+}
+nav img{
+    float: right;
+    margin: 10px;
+    
+}
+@media (max-width:340px){
+ nav img{
+top: 0 !important;
+left: 75%;
+position: absolute
+    
+}   
+}
+
+/* ==================================== article========================== */
+
+article{
+    margin-bottom: 3%;
+}
+.best-pre-school{padding-left: 2%;}
+.article-three{
+  text-align: center;
+ /* padding-top: 80px !important;*/
+    
+}
+.article-three p{
+  text-align: left;
+}
+
+
+/* ================================== our program ==========================*/
+#our-program{
+    background: #9ad000;
+    height: auto;
+    padding-top: 5%;
+}
+
+#years{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+/*  plygroup====nursery=====euroJunior======euroJunior  */
+#plygroup, #nursery, #euroJunior, #euroSenior {
+    
+    background-image: url(../playgroup-bg1.png) ;/* baground yello pond */
+    background-repeat: no-repeat;
+    background-size: 550px;
+    color: #8201ff;
+    padding:40px 0 0 60px;
+    height: 300px;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    
+    
+}
+@media (min-width:717px) and (max-width:847px){
+    #plygroup, #nursery, #euroJunior, #euroSenior{
+        left: 10%;/* to make the images in the center in beween thes screen sizes*/
+    }
+}
+
+#nursery{
+      background-image: url(../playgroup-bg2.png) ;/* baground purple pond */
+      color: #ffffff;
+      padding:40px 0 0 60px;
+}
+#euroJunior,#euroSenior{
+    background-image:none;
+    font-size: 120%;
+    margin-top: -120px;/* to push the text towards top */
+    /*padding: 40px 0 0 60px;*/
+}
+
+
+@media (max-width:500px){
+    #plygroup, #nursery, #euroJunior, #euroSenior{
+    
+    padding-left: 0 !important;
+    }
+}
+#nursery, #euroSenior{color:#ffffff;}
+
+#euroSenior{
+background-image: url(../playgroup-bg4.png) ;  
+}
+
+/* mobile style */
+@media (max-width:700px){
+    #plygroup, #nursery, #euroJunior, #euroSenior {
+   
+   
+    background-color: yellow;
+    color:#8201ff;
+    padding:20px 0 10px 30px;
+    width: auto;
+    background-image: url(../p1flower.png) ;
+    -webkit-background-size: 80px;
+    background-size:80px;
+    background-repeat: no-repeat;
+     background-position:bottom right;
+    position: relative;
+    left: 0;
+    right:0;
+    
+} 
+    #nursery{
+      
+    background-color: #851aa5;/*#00ffff*/
+    background-image: url(../playgroup-bg4%20copy.png) ;
+    color: white;
+    
+   
+    }
+    #euroJunior {
+    background-color: #00ffff;
+    color: white;
+    
+    }
+    #euroSenior{
+     background-color: pink;
+     color: white;
+     
+    }
+    #plygroup ul, #nursery ul,  #euroJunior ul, #euroSenior ul{
+        
+        width:100% !important;
+    } 
+}
+/* mobiel ends */
+
+#plygroup ul, #nursery ul,  #euroJunior ul, #euroSenior ul{
+
+  width:400px;
+  
+}
+
+.plygroup-list-img li{
+    list-style-image: url(../bullet2.gif) !important;
+  
+}
+.nursery-list-img li, #euroSenior li{
+    list-style-image: url(../bullet3.gif) !important;
+  
+}
+
+/* image right corner */
+.download{
+    
+    float: right;
+        
+}
+
+
+/*=================================== OUR CURICULAM====================*/
+#our-curi img{
+    margin-top: 3%;
+}
+#extra-curi{
+    width: 600px;
+    float: left;
+}
+#nexrgen-innovation  li img{
+ width: 180px;
+ height: 200px;
+}
+#nextgen-inno{
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    
+}
+.buddy-world{
+    background-color:#ff9800;
+}
+#video-youtube{
+    padding: 1%;
+    background-color:#851aa5;
+    border-radius:0;
+    width: 45%;
+    float: left;
+    margin-top: 30px;
+}
+#video-youtube iframe{
+    width: 100%;
+    height: 250px;
+}
+
+/*===================NEXTGEN INNOVATIONS  on click section======================*/
+.nextgen-innovation-main, 
+.nextgen-innovation-main-motion,
+.nextgen-innovation-main-play,
+nextgen-innovation-main-eurogym,
+nextgen-innovation-main-wellness,
+nextgen-innovation-main-music{
+      z-index:-1;/* to make the div visible on to of other contents*/
+     
+ 
+}
+
+.nextgen-innovation{
+            background-color: #fbe600;
+            border: 1px solid #fbe600;
+            border-radius: 25px;
+            height: auto;
+            position: absolute;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            position: fixed;
+            top: 40%;
+        }
+.nextgen-innovation .speak, 
+.nextgen-innovation .motion,
+.nextgen-innovation .play2,
+.nextgen-innovation .gym,
+.nextgen-innovation .well,
+.nextgen-innovation .music{
+            margin-left: 45%;
+            margin-right: 45%;
+            padding-top: 5px;
+            width: 120px;
+            height: 50px;
+            
+        }
+
+.nextgen-innovation p{
+            padding-left:5%;
+            padding-right: 5%;
+            color: black;
+        }
+        .cross{
+            float: right;
+            padding-right: 2.8%;
+            margin-top: -5% !important;
+        }
+        
+/* =========================BUDDY WORLD ===========================*/
+.buddy-world img, #about-us img, #frachise-with-budy img, #buddy-live img{
+    margin-top: 3%;
+}
+
+/* ON CLICK STYLING */
+#buddy-w-vdo, #buddy-w-vdo2, #buddy-w-scroll{
+    display: none;
+    margin:0 auto;
+   /* background-color: yellow;*/
+    position: absolute;
+  
+}
+.cross-me{
+   
+    background-repeat: no-repeat;
+    background-position: /*80% 15%*/; 
+    background-color: black;
+    padding: 1.5%;
+    float: left;
+    border-radius:2px;
+}
+#buddy-w-vdo iframe, #buddy-w-vdo2 iframe, #buddy-w-scroll #fd1{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    height: 350px;
+    width: 450px;
+    
+}
+@media (max-width:600px){
+    #buddy-w-vdo iframe, #buddy-w-vdo2 iframe, #buddy-w-scroll #fd1{
+       width: 300px; 
+    }  
+}
+/* to make the video fixed had to create a parent div and made the position to relative and make fixed the child div */ 
+    
+/*
+#buddy-w-vdo{
+  position: relative; 
+}
+*/
+/*
+.budy-wrld-utube-vdo, #buddy-w-vdo {
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    top:30%;
+    left:30%;
+   
+}*/
+/* to make the video responsive when the size is max 800 */
+/*@media (max-width:800px){
+    .budy-wrld-utube-vdo{
+      top:12%;
+      left:12%;  
+    } 
+    #buddy-w-vdo iframe{
+        width:70%;
+        height: 40%;
+    }
+   
+}*/
+
+/* ========================ABOUT US ===============================*/
+
+
+/*======================= SLIDE SHOW AUTO SCROLL =====================*/
+#slide-show{
+    width: 100%;
+}
+/*========================== frachise-with-budy=======================*/
+#frachise-with-budy{
+ margin-top: 50px;
+background-color: #ff3366;
+color: white;
+}
+#ladder{
+    position: relative;
+    left: 30%;
+}
+#ladder img{
+    float: left;
+}
+@media(max-width:600px){
+   #ladder{
+ 
+    left: 0;
+}
+#ladder img{
+    float: none;
+} 
+}
+
+/* ========================BUBBLE LIVE=========================*/
+#buddy-live {
+    margin-top: 30px;
+}
+#buddy-live-videos img{
+    width:320px;
+    height: 320px;
+}
+#buddy-live-rabbit img{
+    width:420px;
+    height: 820px;
+}
+#buddy-live-videos {
+    margin-left: 6%;
+    margin-top: 6%;
+    
+}
+
+/*=========================Euro===============================*/
+.euro img{
+    float: left;
+    clear: right;
+    width: 50%;
+
+}
+/* ======================FOTTER ============================*/
+#fotter{
+    text-align: center;
+}
+
+#top10{
+    position:absolute;
+    bottom:0;
+    right:0;
+    position: fixed;
+}
+/* ========================== grid ==========================*/
+
+.row {
+   
+    padding: 20px;
+    width: 100%;
+    min-height: 1px;
+    float:left;
+}
+.col{
+    /* background-color: grey;*/
+    min-height: 40px;
+    border-radius: 8px;
+    margin-left: 2.4%; /* each column left and right will have margin 2.4%*/
+    margin-right: 2.4%;
+    display: inline-block;
+    float: left;
+}
+
+.col:first-child{
+    margin-left: 0px; /* first  colum within a row will have 0 margin on left*/
+}
+.col:last-child{
+    margin-right: 0px;/* last  colum within a row will have 0 margin on right*/
+}
+
+/* each column one to twelve */
+.col.one   {width: 3.93%;}
+.col.two   {width: 12.66%;}
+.col.three {width: 21.4%;}
+.col.four  {width: 30.13%;}
+.col.five  {width: 38.865%;}
+.col.six   {width: 47.6%;}/* (100(width 100%) - 2.4{col mar left} - 2.4 {col mar right}) / 2 (total 2 column)*/
+.col.seven {width: 56.333%;}
+.col.eight {width: 65.07%;}
+.col.nine  {width: 73.8%;}
+.col.ten   {width: 82.533%;}
+.col.eleven{width: 91.27%;}
+.col.twelve{width: 100%;}
+/* following line is for screen size 768px, width should be 100% in screen size 768px*/
+@media (max-width: 768px){
+    .col{
+        width: 100% !important;
+        margin: 5px 0 5px 0; /* margin top & bottom 5px, left and right 0 */
+    } 
+}
+/* GRID ENDS */
+
+
